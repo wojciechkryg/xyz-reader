@@ -20,5 +20,7 @@
 
     <color name="color_primary">#FFC107</color>
     <color name="color_accent">#FF6E40</color>
-    <color name="ltgray">#ffe0e0e0</color>
+    <color name="color_primary_dark">#FFA000</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
 </resources>
