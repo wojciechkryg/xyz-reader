@@ -16,6 +16,7 @@ import android.view.View;
 
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
+import com.example.xyzreader.data.ItemsContract;
 import com.example.xyzreader.ui.transformer.ZoomOutPageTransformer;
 
 /**
@@ -62,6 +63,12 @@ public class ArticleDetailActivity extends ActionBarActivity
                 }
             }
         });
+
+        if (savedInstanceState == null) {
+            if (getIntent() != null && getIntent().getData() != null) {
+                mStartId = ItemsContract.Items.getItemId(getIntent().getData());
+            }
+        }
     }
 
     @Override
